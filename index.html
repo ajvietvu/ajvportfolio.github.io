@@ -1,54 +1,73 @@
 
 <!DOCTYPE html>
 <html>
-<title>AJ's Photography</title>
+<title>Digital Work</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body {font-family: "Raleway", Arial, sans-serif}
-.w3-row img {margin-bottom: -8px}
+body,h1 {font-family: "Montserrat", sans-serif}
+img {margin-bottom: -7px}
+.w3-row-padding img {margin-bottom: 12px}
 </style>
 <body>
+
 
 <!-- !PAGE CONTENT! -->
 <div class="w3-content" style="max-width:1500px">
 
-  <!-- Header -->
-  <header class="w3-container w3-xlarge w3-padding-24">
-    <a href="#" class="w3-left w3-button w3-white">Photography</a>
-  </header>
+<!-- Header -->
+<div class="w3-opacity">
+<span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
+<div class="w3-clear"></div>
+<header class="w3-center w3-margin-bottom">
+  <h1><b>Digital Artwork</b></h1>
+  <p><b>Logos, Flyers, etc.</b></p>
+  <p class="w3-padding-16"><button class="w3-button w3-black" onclick="myFunction()">AJ Vietvu</button></p>
+</header>
+</div>
 
-  <!-- Photo Grid -->
-  <div class="w3-row">
-    <div class="w3-half">
-      <img src="https://scontent.fsnc1-1.fna.fbcdn.net/v/t1.0-9/31093400_1897944410277433_2983013907020382208_n.jpg?_nc_cat=0&oh=0c4fdd5a084523b472cc54c9d8642a53&oe=5B573F48" style="width:100%">
-      <img src="https://scontent.fsnc1-1.fna.fbcdn.net/v/t1.0-9/31086776_1897944106944130_3722619438738964480_n.jpg?_nc_cat=0&oh=ea551b0c607ddfaff9d499dc0c916a18&oe=5B6ED80A" style="width:100%">
-      <img src="https://scontent.fsnc1-1.fna.fbcdn.net/v/t1.0-9/30709747_1893887824016425_1785035326440341504_n.jpg?_nc_cat=0&oh=48ec52ba34535688a992176b38dee49e&oe=5B5AA9C8" style="width:100%">
-      <img src="https://scontent.fsnc1-1.fna.fbcdn.net/v/t1.0-9/31092056_1897940476944493_3910269884205891584_n.jpg?_nc_cat=0&oh=658b44aeddac9061fb395e158a46ec6e&oe=5B6B55C9" style="width:100%">
-      <img src="https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/30739730_1893887917349749_8711491761433739264_n.jpg?_nc_cat=0&oh=868b7556f7b542b76d0d790a6d5c5058&oe=5B6ECC45" style="width:100%">
-      <img src="https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/30739463_1893888267349714_2858579564764856320_n.jpg?_nc_cat=0&oh=f18731b81e19ab29b99cff994bc3323e&oe=5B56A617" style="width:100%">
-    </div>
-
-    <div class="w3-half">      
-     
-      <img src="https://scontent.fsnc1-1.fna.fbcdn.net/v/t1.0-9/30742672_1893887957349745_7531403489168064512_n.jpg?_nc_cat=0&oh=b969aa37ccde059c99fe5e2e4c25a6ed&oe=5B516772" style="width:100%">
-      <img src="https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/30708076_1893887797349761_2836567015559266304_n.jpg?_nc_cat=0&oh=abf2358ce8aa6e19f35d3564938c43d4&oe=5B54E399" style="width:100%">
-      <img src="https://scontent.fsnc1-1.fna.fbcdn.net/v/t1.0-9/31189608_1897940086944532_6109305797026512896_n.jpg?_nc_cat=0&oh=ec2370c665cd11c7bf445cfdf7429022&oe=5B9CC2FC" style="width:100%">
-      <img src="https://scontent.fsnc1-1.fna.fbcdn.net/v/t1.0-9/31124610_1897944336944107_7930941305755009024_n.jpg?_nc_cat=0&oh=4879e8f8fb7a877b4207a4e09acca4e6&oe=5B63C824" style="width:100%">
-      <img src="https://scontent.fsnc1-1.fna.fbcdn.net/v/t1.0-9/31171125_1897944460277428_7992221173284864000_n.jpg?_nc_cat=0&oh=353a758425fd291963dd2aa5cec805b9&oe=5B6166D6" style="width:100%">
-      <img src="https://scontent.fsnc1-1.fna.fbcdn.net/v/t1.0-9/31093328_1897944330277441_6749314155297112064_n.jpg?_nc_cat=0&oh=9c8217ab11b3626c73ca7339c5bd6f07&oe=5B60F85E" style="width:100%">
-      <img src="https://scontent.fsnc1-1.fna.fbcdn.net/v/t1.0-9/31069022_1897944176944123_349238432381272064_n.jpg?_nc_cat=0&oh=46f0145c8f5b5e64857d712ec899b5ff&oe=5B6CE350" style="width:100%">
-    </div>
+<!-- Photo Grid -->
+<div class="w3-row" id="myGrid" style="margin-bottom:128px">
+  <div class="w3-third">
+    <img src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/41796197_2148970701841468_919506181146279936_n.jpg?_nc_cat=109&_nc_ht=scontent-lax3-1.xx&oh=48670baf7cdf880b2d82c6c632e736cb&oe=5C3DF5F9" style="width:100%">
+    <img src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/41665298_2148970048508200_446190636119359488_n.jpg?_nc_cat=104&_nc_ht=scontent-lax3-1.xx&oh=b2adc59f8afd74051b9140b6183ecb37&oe=5C8A106C" style="width:100%">
+    <img src="https://scontent-lax3-2.xx.fbcdn.net/v/t1.0-9/41673934_2148971048508100_2714951730923044864_n.jpg?_nc_cat=111&_nc_ht=scontent-lax3-2.xx&oh=921bdcd58db75a3be2fcc684961deb73&oe=5C44A5E3" style="width:100%">
+    <img src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/41671145_2148970501841488_7134105923227746304_n.jpg?_nc_cat=109&_nc_ht=scontent-lax3-1.xx&oh=07edd47c02489de43a6f93eef035fbab&oe=5C404F4B" style="width:100%">
+    <img src="https://scontent-lax3-2.xx.fbcdn.net/v/t1.0-9/41599964_2148970615174810_6330366440901705728_n.jpg?_nc_cat=106&_nc_ht=scontent-lax3-2.xx&oh=c8b67a6cdcf5b0a5a6bcc403bf1f6855&oe=5C80600C" style="width:100%">
   </div>
-  
+
+  <div class="w3-third">
+    <img src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/41685458_2148970368508168_5332448386157117440_n.jpg?_nc_cat=103&_nc_ht=scontent-lax3-1.xx&oh=e7e749779da7199bac47aa9dba861599&oe=5C4DBC31" style="width:100%">
+    <img src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/41682099_2148970885174783_1636757125348720640_n.jpg?_nc_cat=109&_nc_ht=scontent-lax3-1.xx&oh=c53fa85d5a4151e87a473c33b4ee846d&oe=5C87D289" style="width:100%">
+    <img src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/41703355_2148971311841407_7011693797604065280_n.jpg?_nc_cat=104&_nc_ht=scontent-lax3-1.xx&oh=fd651d72c342e2ddf9a55151dbd6ec82&oe=5C8561D5" style="width:100%">
+    <img src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/41737774_2148971975174674_3849543023780167680_n.jpg?_nc_cat=108&_nc_ht=scontent-lax3-1.xx&oh=2f23ec726ae29bfc438f6fc9428a429f&oe=5C4381A0" style="width:100%">
+    <img src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/41796981_2148970188508186_4439761411031171072_n.jpg?_nc_cat=104&_nc_ht=scontent-lax3-1.xx&oh=be76881e8799ebb015500c2466f4e669&oe=5C440F87" style="width:100%">
+  </div>
+
+  <div class="w3-third">
+    <img src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/41661071_2148969955174876_1738259030893133824_n.jpg?_nc_cat=108&_nc_ht=scontent-lax3-1.xx&oh=76f43ab5862a08a8c469a0c6318cfb97&oe=5C3EC0C3" style="width:100%">
+    <img src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/41664808_2148970931841445_2171702045164175360_n.jpg?_nc_cat=109&_nc_ht=scontent-lax3-1.xx&oh=2e46dbaf8201aafcc41c480e0384ef46&oe=5C41FDF9" style="width:100%">
+    <img src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/41811643_2148971558508049_8172449627501494272_n.jpg?_nc_cat=109&_nc_ht=scontent-lax3-1.xx&oh=4bcfe9bf59312fb58d560812ce844742&oe=5C8ABD7D" style="width:100%">
+    <img src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/41665392_2148971958508009_352895614213685248_n.jpg?_nc_cat=103&_nc_ht=scontent-lax3-1.xx&oh=8b23fe8059d150c497132395da1166c2&oe=5C806376" style="width:100%">
+  </div>
+</div>
+
 <!-- End Page Content -->
 </div>
 
-<!-- Footer / About Section -->
-
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:128px"> 
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
- 
+
 </body>
 </html>
